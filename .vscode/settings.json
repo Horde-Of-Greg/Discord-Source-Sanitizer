@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "eslint.validate": ["typescript", "javascript"],
+  "editor.pasteAs.preferences": ["text.updateImports.jsts"],
+  "js/ts.tsdk.path": "node_modules/typescript/lib"
+}
