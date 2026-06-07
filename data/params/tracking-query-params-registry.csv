@@ -1,0 +1,167 @@
+name,platform,confirmed_in,unique_per_visitor
+fbclid,Facebook,https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/fbp-and-fbc#what-is-meta-s-clickid,
+gclid, Google AdWords / Google Analytics,https://support.google.com/searchads/answer/6292795,
+gclsrc, Google DoubleClick,https://support.google.com/searchads/answer/6292795,
+gPromoCode, Google Merchant Centre,,
+gQT, Google Merchant Centre,,
+dclid, Google DoubleClick,https://support.google.com/campaignmanager/answer/9182069,
+gbraid, Google AdWords,https://support.google.com/google-ads/answer/10417364,
+wbraid, Google AdWords,https://support.google.com/google-ads/answer/10417364,
+gad_source, Google AdWords,https://support.google.com/google-ads/answer/13327296,
+gad_campaignid, Google Ads,https://support.google.com/google-ads/answer/16193746,
+twclid, Twitter,https://business.twitter.com/en/help/campaign-measurement-and-analytics/conversion-tracking-for-websites.html,
+yclid, Yahoo / Yandex,https://ads-help.yahoo-net.jp/s/article/H000044650 | https://yandex.com/support/metrica/data/yclid.html,
+utm_content, Google Analytics, https://support.google.com/analytics/answer/10917952, No
+utm_term, Google Analytics, https://support.google.com/analytics/answer/10917952, No
+utm_campaign, Google Analytics, https://support.google.com/analytics/answer/10917952, No
+utm_medium, Google Analytics, https://support.google.com/analytics/answer/10917952, No
+utm_source, Google Analytics, https://support.google.com/analytics/answer/10917952, No
+utm_id, Google Analytics, https://support.google.com/analytics/answer/10917952, No
+utm_source_platform, Google Analytics, https://support.google.com/analytics/answer/10917952, No
+utm_creative_format, Google Analytics, https://support.google.com/analytics/answer/10917952, No
+utm_marketing_tactic, Google Analytics, https://support.google.com/analytics/answer/10917952, No
+utm_klaviyo_id, Google Analytics,,
+_ga, Google Analytics,,
+_gl, Google Analytics, https://support.google.com/analytics/answer/10071811, Yes
+srsltid, Google Shopping/Organic, https://support.google.com/analytics/answer/11479699, Yes
+mc_cid, Mailchimp,,
+mc_eid, Mailchimp,,
+_bta_tid, Bronto, https://p.bm23.com/bta.js,
+_bta_c, Bronto, https://p.bm23.com/bta.js,
+trk_contact, Listrak,,
+trk_msg, Listrak,,
+trk_module, Listrak,,
+trk_sid, Listrak,,
+gdfms, GoDataFeed,,
+gdftrk, GoDataFeed,,
+gdffi, GoDataFeed,,
+_ke, Klaviyo, http://a.klaviyo.com/media/js/analytics/analytics.js,
+_kx, Klaviyo, https://help.klaviyo.com/hc/en-us/articles/115005076767#the-_-kx-parameter7, Yes
+redirect_log_mongo_id, Springbot,,
+redirect_mongo_id, Springbot,,
+sb_referer_host, Springbot,,
+mkwid, Marin,,
+pcrid, Marin,,
+ef_id, Adobe Advertising Cloud, https://helpx.adobe.com/media-optimizer/internal-kb/conversion-tracking-basics.html,Yes
+s_kwcid, Adobe Analytics, https://docs.adobe.com/content/help/en/analytics/integration/advertising-analytics/advertising-analytics-workflow/aa-manual-vs-automatic-tracking.html,
+msclkid, Microsoft Advertising, https://help.ads.microsoft.com/apex/index/3/en/60000, Yes
+dm_i, dotdigital, https://support.dotdigital.com/hc/en-gb/articles/360006551019-Link-tracking, Yes
+epik, Pinterest,  https://painlessbloganalytics.com/what-is-fbclid-how-to-remove/, Yes
+pp, Pinterest,  https://github.com/wp-media/wp-rocket/issues/5783,
+pk_campaign, Piwik,,
+pk_kwd, Piwik,,
+pk_keyword, Piwik,,
+pk_source, Piwik,,
+pk_medium, Piwik,,
+pk_campaign, Piwik,,
+pk_cid, Piwik,,
+pk_content, Piwik,,
+piwik_campaign, Piwik,,
+piwik_kwd, Piwik,,
+piwik_keyword, Piwik,,
+mtm_campaign, Matomo, https://matomo.org/docs/tracking-campaigns/,
+mtm_keyword, Matomo, https://matomo.org/docs/tracking-campaigns/,
+mtm_source, Matomo, https://matomo.org/docs/tracking-campaigns/,
+mtm_medium, Matomo, https://matomo.org/docs/tracking-campaigns/,
+mtm_content, Matomo, https://matomo.org/docs/tracking-campaigns/,
+mtm_cid, Matomo, https://matomo.org/docs/tracking-campaigns/,
+mtm_group, Matomo, https://matomo.org/docs/tracking-campaigns/,
+mtm_placement, Matomo, https://matomo.org/docs/tracking-campaigns/,
+matomo_campaign, Matomo, https://matomo.org/docs/tracking-campaigns/,
+matomo_keyword, Matomo, https://matomo.org/docs/tracking-campaigns/,
+matomo_source, Matomo, https://matomo.org/docs/tracking-campaigns/,
+matomo_medium, Matomo, https://matomo.org/docs/tracking-campaigns/,
+matomo_content, Matomo, https://matomo.org/docs/tracking-campaigns/,
+matomo_cid, Matomo, https://matomo.org/docs/tracking-campaigns/,
+matomo_group, Matomo, https://matomo.org/docs/tracking-campaigns/,
+matomo_placement, Matomo, https://matomo.org/docs/tracking-campaigns/,
+hsa_cam, Hubspot, https://knowledge.hubspot.com/ads/ad-tracking-in-hubspot,
+hsa_grp, Hubspot, https://knowledge.hubspot.com/ads/ad-tracking-in-hubspot,
+hsa_mt, Hubspot, https://knowledge.hubspot.com/ads/ad-tracking-in-hubspot,
+hsa_src, Hubspot, https://knowledge.hubspot.com/ads/ad-tracking-in-hubspot,
+hsa_ad, Hubspot, https://knowledge.hubspot.com/ads/ad-tracking-in-hubspot,
+hsa_acc, Hubspot, https://knowledge.hubspot.com/ads/ad-tracking-in-hubspot, Yes
+hsa_net, Hubspot, https://knowledge.hubspot.com/ads/ad-tracking-in-hubspot,
+hsa_kw, Hubspot, https://knowledge.hubspot.com/ads/ad-tracking-in-hubspot,
+hsa_tgt, Hubspot, https://knowledge.hubspot.com/ads/ad-tracking-in-hubspot,
+hsa_ver, Hubspot, https://knowledge.hubspot.com/ads/ad-tracking-in-hubspot,
+_hsenc, Hubspot, https://knowledge.hubspot.com/email/manage-your-marketing-email-account-settings#identity-tracking, Yes
+_hsmi, Hubspot, https://knowledge.hubspot.com/email/links-in-emails-or-ctas-lead-to-an-error-page,
+__hssc, Hubspot, https://knowledge.hubspot.com/reports/what-cookies-does-hubspot-set-in-a-visitor-s-browser, Yes
+__hstc, Hubspot, https://knowledge.hubspot.com/reports/what-cookies-does-hubspot-set-in-a-visitor-s-browser, Yes
+__hsfp, Hubspot, https://knowledge.hubspot.com/reports/what-cookies-does-hubspot-set-in-a-visitor-s-browser, Yes
+hsCtaTracking, Hubspot, https://knowledge.hubspot.com/ctas/calls-to-action-frequently-asked-questions#why-is-the-landing-page-url-so-long-after-i-click-on-a-cta, Yes
+_branch_match_id, Branch, https://stackoverflow.com/a/37892369, Yes
+mkevt, eBay, https://partnerhelp.ebay.com/helpcenter/s/article/What-are-the-parameters-of-an-EPN-link#tracking-link-format, No
+mkcid, eBay, https://partnerhelp.ebay.com/helpcenter/s/article/What-are-the-parameters-of-an-EPN-link#tracking-link-format, No
+mkrid, eBay, https://partnerhelp.ebay.com/helpcenter/s/article/What-are-the-parameters-of-an-EPN-link#tracking-link-format, No
+campid, eBay, https://partnerhelp.ebay.com/helpcenter/s/article/What-are-the-parameters-of-an-EPN-link#tracking-link-format, No
+toolid, eBay, https://partnerhelp.ebay.com/helpcenter/s/article/What-are-the-parameters-of-an-EPN-link#tracking-link-format, No
+customid, eBay, https://partnerhelp.ebay.com/helpcenter/s/article/What-are-the-parameters-of-an-EPN-link#tracking-link-format, No
+igshid, Instagram, https://github.com/brave/brave-browser/issues/11580,
+si, Spotify / YouTube, https://community.spotify.com/t5/Desktop-Windows/si-Parameter-in-Spotify-URL-s/td-p/4538290,
+sms_source, Wunderkind, https://assets.bounceexchange.com/assets/smart-tag/versioned/sms_2579b6aa71148c3eb940153c85a653a0.br.js, No
+sms_click, Wunderkind, https://assets.bounceexchange.com/assets/smart-tag/versioned/sms_2579b6aa71148c3eb940153c85a653a0.br.js, Yes
+sms_uph, Wunderkind, https://assets.bounceexchange.com/assets/smart-tag/versioned/sms_2579b6aa71148c3eb940153c85a653a0.br.js, Yes
+ttclid, TikTok, https://ads.tiktok.com/help/article/tiktok-click-id, Yes
+ndclid, Next Door,,Yes
+ScCid, Snapchat, https://businesshelp.snapchat.com/s/article/click-id, Yes
+rtid, Rokt, https://docs.rokt.com/developers/integration-guides/web/advanced/rokt-id-tag/, Yes
+irclickid, Impact (formerly Impact Radius), https://integrations.impact.com/impact-brand/docs/api-tracking-integration, Yes
+vmcid, Yahoo, https://help.yahooinc.com/identity/docs/track-conversions,
+tw_source, Triple Whale, https://kb.triplewhale.com/en/articles/9534445-attribution-for-non-integrated-channels, 
+tw_campaign, Triple Whale, https://kb.triplewhale.com/en/articles/9534445-attribution-for-non-integrated-channels, 
+tw_term, Triple Whale, https://kb.triplewhale.com/en/articles/9534445-attribution-for-non-integrated-channels, 
+tw_content, Triple Whale, https://kb.triplewhale.com/en/articles/9534445-attribution-for-non-integrated-channels, 
+tw_adid, Triple Whale, https://kb.triplewhale.com/en/articles/6448705-acceptable-utm-source-ad-id-values, 
+tw_kwdid, Triple Whale, Undocumented but always combined with tw_adid&tw_campaign&tw_source, 
+gadid,Google,https://kb.triplewhale.com/en/articles/6448705-acceptable-utm-source-ad-id-values,
+fbadid,Meta/Facebook,https://kb.triplewhale.com/en/articles/6448705-acceptable-utm-source-ad-id-values,
+ttadid,TikTok,https://kb.triplewhale.com/en/articles/6448705-acceptable-utm-source-ad-id-values,
+scadid,Snapchat,https://kb.triplewhale.com/en/articles/6448705-acceptable-utm-source-ad-id-values,
+padid,Pinterest,https://kb.triplewhale.com/en/articles/6448705-acceptable-utm-source-ad-id-values,
+klar_source, Klar Insights, https://help.getklar.com/en/articles/7161450-url-parameters-for-google-ads,
+klar_cpid, Klar Insights, https://help.getklar.com/en/articles/7161450-url-parameters-for-google-ads,
+klar_adid, Klar Insights, https://help.getklar.com/en/articles/7161450-url-parameters-for-google-ads,
+bg_kw,Billy Grace,https://help.billygrace.com/en/articles/9735689-checking-utm-tracking,
+bg_aid_k,Billy Grace,https://help.billygrace.com/en/articles/6268656-required-utms-for-billy-grace,
+bg_aid_v,Billy Grace,https://help.billygrace.com/en/articles/6268656-required-utms-for-billy-grace,
+bg_campaign,Billy Grace,https://help.billygrace.com/en/articles/9735689-checking-utm-tracking,
+bg_source,Billy Grace,https://help.billygrace.com/en/articles/9735689-checking-utm-tracking,
+bg_source_id,Billy Grace,https://help.billygrace.com/en/articles/9735689-checking-utm-tracking,
+nbt,Northbeam,https://docs.northbeam.io/docs/setting-up-google-ads-for-northbeam,
+nb_adtype,Northbeam,Always combined with ntb and other nb_* params,
+nb_ap,Northbeam,Always combined with ntb and other nb_* params,
+nb_expid_meta,Northbeam,Always combined with ntb and other nb_* params,
+nb_fii,Northbeam,Always combined with ntb and other nb_* params,
+nb_klid,Northbeam,https://docs.northbeam.io/docs/setting-up-klaviyo-for-northbeam,
+nb_kwd,Northbeam,Always combined with ntb and other nb_* params,
+nb_li_ms,Northbeam,Always combined with ntb and other nb_* params,
+nb_lp_ms,Northbeam,Always combined with ntb and other nb_* params,
+nb_mi,Northbeam,Always combined with ntb and other nb_* params,
+nb_mt,Northbeam,Always combined with ntb and other nb_* params,
+nb_pc,Northbeam,Always combined with ntb and other nb_* params,
+nb_pi,Northbeam,Always combined with ntb and other nb_* params,
+nb_placement,Northbeam,https://docs.northbeam.io/docs/setting-up-facebook-ads-tracking,
+nb_ppi,Northbeam,Always combined with ntb and other nb_* params,
+nb_ti,Northbeam,Always combined with ntb and other nb_* params,
+channable,Channable,https://www.channable.com/help,
+adid,Google Analytics and Ads,https://docs.wp-rocket.me/article/971-caching-query-strings#ignored-parameters,
+adgroupid,Google Analytics and Ads,https://docs.wp-rocket.me/article/971-caching-query-strings#ignored-parameters,
+adtype,Google Analytics and Ads,,
+fbc_id,Hyros,https://docs.hyros.com/docs/meta-ads,
+h_ad_id,Hyros,https://docs.hyros.com/docs/meta-ads,
+meta_placement,Meta (Facebook),https://www.facebook.com/business/help/2360940870872492,
+meta_site_source,Meta (Facebook),https://www.facebook.com/business/help/2360940870872492,
+cq_cmp,Unknown,Always combined with gad_*,
+cq_con,Unknown,Always combined with gad_*,
+cq_med,Unknown,Always combined with gad_*,
+cq_net,Unknown,Always combined with gad_*,
+cq_plac,Unknown,Always combined with gad_*,
+cq_plt,Unknown,Always combined with gad_*,
+cq_src,Unknown,Always combined with gad_*,
+cq_term,Unknown,Always combined with gad_*,
+pl_gc,Unknown,Always combined with gad_* and utm_*,
+kb,Unknown,Always combined with gad_* or utm_*,
+cid,presumably Adobe,Campaign or Client ID and often combined with ad_* or utm_* parameters,
+sid,presumably Adobe,Session or Subscriber id and often combined with ad_* or utm_* parameters,

@@ -1,0 +1,6 @@
+{
+    "tracking-query-params-registry.csv": {
+        "source": "https://github.com/mpchadwick/tracking-query-params-registry/",
+        "keyToSelect": "name"
+    }
+}
