@@ -1,6 +1,6 @@
 {
     "name": "ts-node-template-d-alessian",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A template for my personal node typescript projects.",
     "license": "MIT",
     "author": "Alessian Dormal",
@@ -12,7 +12,10 @@
         "dev": "tsx watch src/main.ts",
         "tscheck": "tsc --noEmit",
         "lint": "eslint . --fix",
-        "lint:check": "eslint ."
+        "lint:check": "eslint .",
+        "bump:major": "npm version major --force && git push origin main --tags",
+        "bump:minor": "npm version minor --force && git push origin main --tags",
+        "bump:patch": "npm version patch --force && git push origin main --tags"
     },
     "devDependencies": {
         "@eslint/js": "^10.0.1",
