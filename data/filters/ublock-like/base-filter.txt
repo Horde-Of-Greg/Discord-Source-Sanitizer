@@ -1,0 +1,76 @@
+! Discord Source Sanitizer - base tracking-param cleanup
+! This is a generic list of params you almost definitely want to remove.
+! If you want to ADD new filter, it would probably be better to create another file.
+! Adding rules to this file might create merge conflicts.
+
+! Generic high-confidence click IDs / campaign IDs
+*$removeparam=fbclid
+*$removeparam=gclid
+*$removeparam=gclsrc
+*$removeparam=dclid
+*$removeparam=gbraid
+*$removeparam=wbraid
+*$removeparam=msclkid
+*$removeparam=ttclid
+*$removeparam=twclid
+*$removeparam=yclid
+*$removeparam=ysclid
+*$removeparam=igsh
+*$removeparam=igshid
+*$removeparam=rdt
+*$removeparam=cjevent
+*$removeparam=cjdata
+*$removeparam=irclickid
+*$removeparam=irgwc
+*$removeparam=sscid
+*$removeparam=awc
+
+! UTM and common campaign-param families
+*$removeparam=/^utm_/i
+*$removeparam=/^hsa_/i
+*$removeparam=/^mtm_/i
+*$removeparam=/^pk_/i
+*$removeparam=/^at_/i
+*$removeparam=/^af_/i
+*$removeparam=/^adj_/i
+*$removeparam=/^adjust_/i
+
+! HubSpot / Mailchimp / Adobe / Salesforce-ish
+*$removeparam=_hsenc
+*$removeparam=_hsmi
+*$removeparam=__hssc
+*$removeparam=__hstc
+*$removeparam=__hsfp
+*$removeparam=mc_cid
+*$removeparam=mc_eid
+*$removeparam=adobe_mc_ref
+*$removeparam=adobe_mc_sdid
+*$removeparam=s_cid
+*$removeparam=sc_cid
+
+! YouTube share params
+||youtube.com^$removeparam=si
+||youtube.com^$removeparam=feature
+||youtube.com^$removeparam=pp
+||youtu.be^$removeparam=si
+||youtu.be^$removeparam=feature
+||youtu.be^$removeparam=pp
+
+! Instagram share params
+||instagram.com^$removeparam=igsh
+||instagram.com^$removeparam=igshid
+
+! TikTok share params
+||tiktok.com^$removeparam=_r
+||tiktok.com^$removeparam=_t
+||tiktok.com^$removeparam=is_from_webapp
+||tiktok.com^$removeparam=sender_device
+||tiktok.com^$removeparam=web_id
+
+! Amazon affiliate/share params
+||amazon.*^$removeparam=tag
+||amazon.*^$removeparam=linkCode
+||amazon.*^$removeparam=ascsubtag
+||amazon.*^$removeparam=creativeASIN
+||amazon.*^$removeparam=ref_
+||amazon.*^$removeparam=linkId

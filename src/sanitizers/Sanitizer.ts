@@ -1,17 +1,22 @@
 import LinkifyIt from "linkify-it";
 
+import type { ITrackingRuleSet } from "../types/data/rules/evaluation/ITrackingRuleSet.js";
+import type { ISanitizer } from "../types/sanitizers/ISanitizer.js";
 import type { UrlMatches } from "../types/url.js";
 import type { BaseSanitizer } from "./BaseSanitizer.js";
 import { TrackingParamSanitizer } from "./impl/TrackingParamSanitizer.js";
 
-export class Sanitizer {
-    private _trackingParams?: TrackingParamSanitizer;
+export class Sanitizer implements ISanitizer {
     private readonly linkify: LinkifyIt = new LinkifyIt(undefined, {
         fuzzyLink: false,
         fuzzyEmail: false,
         fuzzyIP: false,
     });
-    private allSanitizers: BaseSanitizer[] = [this.trackingParamSanitizer];
+    private readonly allSanitizers: BaseSanitizer[];
+
+    public constructor(trackingRules: ITrackingRuleSet) {
+        this.allSanitizers = [new TrackingParamSanitizer(trackingRules)];
+    }
 
     public exec(messageContent: string): string {
         const urlMatches = this.fetchUrls(messageContent);
@@ -65,9 +70,5 @@ export class Sanitizer {
         rebuiltMessageContent += messageContent.slice(previousIndex);
 
         return rebuiltMessageContent;
-    }
-
-    private get trackingParamSanitizer(): TrackingParamSanitizer {
-        return (this._trackingParams ??= new TrackingParamSanitizer());
     }
 }

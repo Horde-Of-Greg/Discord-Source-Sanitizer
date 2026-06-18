@@ -7,6 +7,8 @@ export class MessageCreateHandler extends DiscordEventHandler<"messageCreate"> {
     readonly once = false;
 
     async handle(message: OmitPartialGroupDMChannel<Message>): Promise<void> {
+        const start = performance.now();
         await this.actors.replacer.replace(message);
+        console.log("Time taken:", performance.now() - start);
     }
 }

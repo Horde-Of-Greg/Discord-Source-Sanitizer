@@ -146,3 +146,7 @@ vite.config.ts.timestamp-*
 # MacOS
 *.icloud
 *.DS_Store
+
+# User filters
+data/filters/ublock-like/*.txt
+!data/filters/ublock-like/base-filter.txt

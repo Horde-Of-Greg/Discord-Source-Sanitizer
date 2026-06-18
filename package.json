@@ -1,6 +1,6 @@
 {
     "name": "ts-node-template-d-alessian",
-    "version": "0.2.0",
+    "version": "1.0.0",
     "description": "A template for my personal node typescript projects.",
     "license": "MIT",
     "author": "Alessian Dormal",
@@ -9,10 +9,13 @@
     "scripts": {
         "build": "tsc -p tsconfig.build.json",
         "start": "node dist/main.js",
-        "dev": "tsx watch src/main.ts",
+        "dev": "NODE_ENV=development tsx watch src/main.ts",
         "tscheck": "tsc --noEmit",
         "lint": "eslint . --fix",
         "lint:check": "eslint .",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "test:coverage": "vitest run --coverage",
         "bump:major": "npm version major --force && git push origin main --tags",
         "bump:minor": "npm version minor --force && git push origin main --tags",
         "bump:patch": "npm version patch --force && git push origin main --tags"
@@ -21,6 +24,7 @@
         "@eslint/js": "^10.0.1",
         "@types/linkify-it": "5.0.0",
         "@types/node": "^25.9.1",
+        "@vitest/coverage-v8": "^4.1.9",
         "eslint": "^10.4.0",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-n": "^18.0.1",
@@ -32,7 +36,8 @@
         "prettier": "^3.8.3",
         "tsx": "^4.22.3",
         "typescript": "^6.0.3",
-        "typescript-eslint": "^8.60.0"
+        "typescript-eslint": "^8.60.0",
+        "vitest": "^4.1.9"
     },
     "dependencies": {
         "csv-parse": "^6.2.1",

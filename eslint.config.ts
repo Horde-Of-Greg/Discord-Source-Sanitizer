@@ -15,7 +15,7 @@ const eslintConfigDirectory = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig(
     {
-        ignores: ["dist/**", "coverage/**", "node_modules/**"],
+        ignores: ["dist/**", "node_modules/**", "ecosystem.config.cjs"],
     },
 
     eslint.configs.recommended,
@@ -45,6 +45,7 @@ export default defineConfig(
             "dot-notation": "error",
             "no-implicit-coercion": "warn",
             "no-param-reassign": "warn",
+            "max-params": ["warn", 2],
 
             "no-unused-vars": "off",
             "@typescript-eslint/no-unused-vars": "off",
@@ -63,6 +64,7 @@ export default defineConfig(
             "simple-import-sort/imports": "error",
             "simple-import-sort/exports": "error",
 
+            "@typescript-eslint/consistent-type-definitions": "off",
             "@typescript-eslint/consistent-type-imports": "error",
             "@typescript-eslint/no-floating-promises": "error",
             "@typescript-eslint/no-misused-promises": "error",
@@ -88,7 +90,7 @@ export default defineConfig(
             "n/no-deprecated-api": "warn",
             "n/prefer-node-protocol": "error",
 
-            "sonarjs/cognitive-complexity": ["warn", 20],
+            "sonarjs/cognitive-complexity": ["warn", 10],
             "sonarjs/no-identical-conditions": "error",
             "sonarjs/no-identical-expressions": "error",
             "sonarjs/different-types-comparison": "error",

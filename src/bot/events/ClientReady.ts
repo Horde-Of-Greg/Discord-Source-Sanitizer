@@ -7,7 +7,8 @@ export class ClientReadyHandler extends DiscordEventHandler<"clientReady"> {
     readonly once = true;
 
     handle(client: Client): void {
-        console.log(`Ready as ${client.user?.tag ?? "UNKNOWN"}`);
+        const environment = process.env.NODE_ENV?.toString();
+        console.log(`Ready as ${client.user?.tag ?? "UNKNOWN"} in ${environment ?? "UNKNOWN NODE_ENV"}`);
         this.discordBot.notifyReady();
     }
 }
