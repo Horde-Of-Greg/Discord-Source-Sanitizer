@@ -1,10 +1,19 @@
 import dotenv from "dotenv";
 
 import { DiscordBot } from "./bot/DiscordBot.js";
+import { createFilterLoadingPipeline } from "./filters/createFilterLoadingPipeline.js";
+import { Sanitizer } from "./sanitizers/Sanitizer.js";
+import { repoPaths } from "./utils/directory.js";
 
 dotenv.config({ quiet: true });
 
-const bot = new DiscordBot();
+const filterResult = await createFilterLoadingPipeline(repoPaths.ublockLikeFilterDir).load();
+for (const diagnostic of filterResult.report.entries()) {
+    console.warn(
+        `[filters] ${diagnostic.count.toString()} ${diagnostic.reason}; example: ${diagnostic.example}`,
+    );
+}
+const bot = new DiscordBot(new Sanitizer(filterResult.rules));
 const discordToken = process.env.DISCORD_TOKEN;
 if (discordToken === undefined) throw new Error("DISCORD_TOKEN not set");
 

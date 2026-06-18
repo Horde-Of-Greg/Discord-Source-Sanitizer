@@ -1,4 +1,11 @@
 import path from "node:path";
 
-export const projectDir = path.join(import.meta.dirname, "..");
-export const repoDir = path.join(projectDir, "..");
+class RepoPaths {
+    readonly projectDir = path.join(import.meta.dirname, "..");
+    readonly repoDir = path.join(this.projectDir, "..");
+    readonly dataDir = path.join(this.repoDir, "data");
+    readonly filterDir = path.join(this.dataDir, "filters");
+    readonly ublockLikeFilterDir = path.join(this.filterDir, "ublock-like");
+}
+
+export const repoPaths = new RepoPaths();

@@ -1,6 +1,6 @@
 import { Client, GatewayIntentBits, Partials } from "discord.js";
 
-import { Sanitizer } from "../sanitizers/Sanitizer.js";
+import type { Sanitizer } from "../sanitizers/Sanitizer.js";
 import type { AnyDiscordEventHandler } from "../types/discord/eventHandlers.js";
 import { Actors } from "./actors/Actors.js";
 import { ClientReadyHandler } from "./events/ClientReady.js";
@@ -17,15 +17,15 @@ const gatewayIntents = [
 export class DiscordBot {
     client: Client;
 
-    private readonly sanitizer: Sanitizer = new Sanitizer();
-    private readonly actors: Actors = new Actors(this.sanitizer);
+    private readonly actors: Actors;
 
     private readonly handlers: AnyDiscordEventHandler[];
     private readyResolver?: () => void;
     private readonly readyPromise: Promise<void>;
 
-    constructor() {
+    constructor(private readonly sanitizer: Sanitizer) {
         this.client = new Client({ intents: gatewayIntents, partials: [Partials.Message, Partials.Channel] });
+        this.actors = new Actors(this.sanitizer);
 
         this.readyPromise = new Promise<void>((resolve) => {
             this.readyResolver = resolve;
