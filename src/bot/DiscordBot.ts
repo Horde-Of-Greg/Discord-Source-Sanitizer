@@ -1,20 +1,22 @@
 import { Client, GatewayIntentBits, Partials } from "discord.js";
 
 import type { Sanitizer } from "../sanitizers/Sanitizer.js";
+import type { IDiscordBot } from "../types/discord/bot/IDiscordBot.js";
 import type { AnyDiscordEventHandler } from "../types/discord/eventHandlers.js";
 import { Actors } from "./actors/Actors.js";
+import { DiscordEventHandlerOptions } from "./DiscordEventHandlerOptions.js";
 import { ClientReadyHandler } from "./events/ClientReady.js";
 import { MessageCreateHandler } from "./events/MessageCreate.js";
 import { MessageEditHandler } from "./events/MessageEdit.js";
 
-const gatewayIntents = [
+export const gatewayIntents = [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent,
     GatewayIntentBits.GuildMembers,
 ];
 
-export class DiscordBot {
+export class DiscordBot implements IDiscordBot {
     client: Client;
 
     private readonly actors: Actors;
@@ -31,10 +33,11 @@ export class DiscordBot {
             this.readyResolver = resolve;
         });
 
+        const handlerOptions = new DiscordEventHandlerOptions(sanitizer, this);
         this.handlers = [
-            new MessageCreateHandler(this, this.sanitizer, this.actors),
-            new MessageEditHandler(this, this.sanitizer, this.actors),
-            new ClientReadyHandler(this, this.sanitizer, this.actors),
+            new MessageCreateHandler(handlerOptions),
+            new MessageEditHandler(handlerOptions),
+            new ClientReadyHandler(handlerOptions),
         ];
     }
 

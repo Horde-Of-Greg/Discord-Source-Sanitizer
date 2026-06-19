@@ -1,8 +1,8 @@
-import { DestinationConstraint } from "../../../data/rules/DestinationConstraint.js";
-import { FilterErrorAction } from "../../../types/filters/FilterErrorAction.js";
+import { DestinationConstraint } from "../../../data/rules/model/DestinationConstraint.js";
+import { FilterErrorAction } from "../../../types/filters/diagnostics/FilterErrorAction.js";
 import type { IDestinationParseState } from "../../../types/filters/ublock/IDestinationParseState.js";
-import { FilterProcessingError } from "../../FilterProcessingError.js";
-import type { SourceLine } from "../../SourceLine.js";
+import { FilterProcessingError } from "../../diagnostics/FilterProcessingError.js";
+import type { SourceLine } from "../../preprocessing/SourceLine.js";
 import type { UblockOptionLexeme } from "../lexing/UblockOptionLexeme.js";
 import { parseRegexLiteral } from "./parseRegexLiteral.js";
 import { splitDomainList } from "./splitDomainList.js";

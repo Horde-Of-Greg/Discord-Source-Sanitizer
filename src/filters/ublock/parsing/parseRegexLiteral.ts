@@ -1,6 +1,6 @@
-import { FilterErrorAction } from "../../../types/filters/FilterErrorAction.js";
-import { FilterProcessingError } from "../../FilterProcessingError.js";
-import type { SourceLine } from "../../SourceLine.js";
+import { FilterErrorAction } from "../../../types/filters/diagnostics/FilterErrorAction.js";
+import { FilterProcessingError } from "../../diagnostics/FilterProcessingError.js";
+import type { SourceLine } from "../../preprocessing/SourceLine.js";
 
 export function parseRegexLiteral(value: string, source: SourceLine): RegExp | null {
     if (!value.startsWith("/")) return null;

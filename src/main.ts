@@ -1,11 +1,17 @@
+import path from "node:path";
+
 import dotenv from "dotenv";
 
 import { DiscordBot } from "./bot/DiscordBot.js";
-import { createFilterLoadingPipeline } from "./filters/createFilterLoadingPipeline.js";
+import { FilterFileFetcher } from "./data/FilterFileFetcher.js";
+import { createFilterLoadingPipeline } from "./filters/pipeline/createFilterLoadingPipeline.js";
 import { Sanitizer } from "./sanitizers/Sanitizer.js";
 import { repoPaths } from "./utils/directory.js";
 
 dotenv.config({ quiet: true });
+
+const ublockFilterFileFetcher = new FilterFileFetcher(path.join(repoPaths.dataDir, "filters", "ublock-like"));
+await ublockFilterFileFetcher.fetchAll();
 
 const filterResult = await createFilterLoadingPipeline(repoPaths.ublockLikeFilterDir).load();
 for (const diagnostic of filterResult.report.entries()) {

@@ -1,7 +1,7 @@
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 
-import type { IFilterFileReader } from "../types/filters/IFilterFileReader.js";
+import type { IFilterFileReader } from "../types/filters/preprocessing/IFilterFileReader.js";
 
 export class FilterFileReader implements IFilterFileReader {
     public constructor(public readonly rootPath: string) {}

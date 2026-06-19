@@ -1,11 +1,12 @@
 import LinkifyIt from "linkify-it";
 
-import type { ITrackingRuleSet } from "../types/data/rules/ITrackingRuleSet.js";
+import type { ITrackingRuleSet } from "../types/data/rules/evaluation/ITrackingRuleSet.js";
+import type { ISanitizer } from "../types/sanitizers/ISanitizer.js";
 import type { UrlMatches } from "../types/url.js";
 import type { BaseSanitizer } from "./BaseSanitizer.js";
 import { TrackingParamSanitizer } from "./impl/TrackingParamSanitizer.js";
 
-export class Sanitizer {
+export class Sanitizer implements ISanitizer {
     private readonly linkify: LinkifyIt = new LinkifyIt(undefined, {
         fuzzyLink: false,
         fuzzyEmail: false,

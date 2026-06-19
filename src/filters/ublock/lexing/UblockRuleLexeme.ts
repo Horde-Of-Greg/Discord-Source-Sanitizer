@@ -1,5 +1,5 @@
 import type { IUblockRuleLexemeOptions } from "../../../types/filters/ublock/IUblockRuleLexemeOptions.js";
-import type { SourceLine } from "../../SourceLine.js";
+import type { SourceLine } from "../../preprocessing/SourceLine.js";
 import type { UblockOptionLexeme } from "./UblockOptionLexeme.js";
 
 export class UblockRuleLexeme {

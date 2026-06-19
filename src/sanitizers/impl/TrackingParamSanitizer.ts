@@ -1,4 +1,4 @@
-import type { ITrackingRuleSet } from "../../types/data/rules/ITrackingRuleSet.js";
+import type { ITrackingRuleSet } from "../../types/data/rules/evaluation/ITrackingRuleSet.js";
 import type { UrlMatches } from "../../types/url.js";
 import { BaseSanitizer } from "../BaseSanitizer.js";
 

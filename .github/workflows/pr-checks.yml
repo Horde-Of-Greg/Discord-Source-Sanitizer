@@ -38,3 +38,6 @@ jobs:
 
             - name: Run ESLint with JSON report
               run: npm run lint
+
+            - name: Run Vitest
+              run: npm run test

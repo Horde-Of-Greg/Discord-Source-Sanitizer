@@ -1,4 +1,4 @@
-import type { SourceLine } from "../../../filters/SourceLine.js";
+import type { SourceLine } from "../../../filters/preprocessing/SourceLine.js";
 import type { UblockOptionLexeme } from "../../../filters/ublock/lexing/UblockOptionLexeme.js";
 
 export interface IUblockRuleLexemeOptions {

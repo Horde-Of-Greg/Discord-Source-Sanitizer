@@ -1,10 +1,10 @@
-import { createParsedTrackingRule } from "../../../data/rules/createParsedTrackingRule.js";
-import type { ParsedTrackingRule } from "../../../data/rules/ParsedTrackingRule.js";
-import { CaseSensitivity } from "../../../types/data/rules/CaseSensitivity.js";
-import { RuleKind } from "../../../types/data/rules/RuleKind.js";
-import { RulePriority } from "../../../types/data/rules/RulePriority.js";
-import { FilterErrorAction } from "../../../types/filters/FilterErrorAction.js";
-import { FilterProcessingError } from "../../FilterProcessingError.js";
+import { createParsedTrackingRule } from "../../../data/rules/model/createParsedTrackingRule.js";
+import type { ParsedTrackingRule } from "../../../data/rules/model/ParsedTrackingRule.js";
+import { CaseSensitivity } from "../../../types/data/rules/model/CaseSensitivity.js";
+import { RuleKind } from "../../../types/data/rules/model/RuleKind.js";
+import { RulePriority } from "../../../types/data/rules/model/RulePriority.js";
+import { FilterErrorAction } from "../../../types/filters/diagnostics/FilterErrorAction.js";
+import { FilterProcessingError } from "../../diagnostics/FilterProcessingError.js";
 import type { UblockOptionLexeme } from "../lexing/UblockOptionLexeme.js";
 import type { UblockRuleLexeme } from "../lexing/UblockRuleLexeme.js";
 import { BaseFilterParser } from "./BaseFilterParser.js";

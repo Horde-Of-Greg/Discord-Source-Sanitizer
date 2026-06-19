@@ -4,9 +4,9 @@ import { ExceptExactRemovalOperation } from "../../../data/rules/operations/Exce
 import { ExceptRegexRemovalOperation } from "../../../data/rules/operations/ExceptRegexRemovalOperation.js";
 import { RegexRemovalOperation } from "../../../data/rules/operations/RegexRemovalOperation.js";
 import { RemoveAllOperation } from "../../../data/rules/operations/RemoveAllOperation.js";
-import { FilterErrorAction } from "../../../types/filters/FilterErrorAction.js";
-import { FilterProcessingError } from "../../FilterProcessingError.js";
-import type { SourceLine } from "../../SourceLine.js";
+import { FilterErrorAction } from "../../../types/filters/diagnostics/FilterErrorAction.js";
+import { FilterProcessingError } from "../../diagnostics/FilterProcessingError.js";
+import type { SourceLine } from "../../preprocessing/SourceLine.js";
 import type { UblockOptionLexeme } from "../lexing/UblockOptionLexeme.js";
 import { parseRegexLiteral } from "./parseRegexLiteral.js";
 

@@ -1,6 +1,6 @@
-import { FilterErrorAction } from "../../../types/filters/FilterErrorAction.js";
-import { FilterProcessingError } from "../../FilterProcessingError.js";
-import type { SourceLine } from "../../SourceLine.js";
+import { FilterErrorAction } from "../../../types/filters/diagnostics/FilterErrorAction.js";
+import { FilterProcessingError } from "../../diagnostics/FilterProcessingError.js";
+import type { SourceLine } from "../../preprocessing/SourceLine.js";
 import { BaseFilterLexer } from "./BaseFilterLexer.js";
 import { createOptionLexeme } from "./createOptionLexeme.js";
 import { findOptionSeparator } from "./findOptionSeparator.js";

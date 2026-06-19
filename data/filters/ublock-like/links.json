@@ -1,12 +1,12 @@
 [
     {
         "name": "AdguardFilters",
-        "link": "https://raw.githubusercontent.com/DandelionSprout/adfilt/refs/heads/master/LegitimateURLShortener.txt",
+        "rawData": "https://raw.githubusercontent.com/DandelionSprout/adfilt/refs/heads/master/LegitimateURLShortener.txt",
         "source": "https://github.com/AdguardTeam/AdGuardFilters"
     },
     {
         "name": "LegitimateURLShortener",
-        "link": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt",
+        "rawData": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt",
         "source": "https://github.com/DandelionSprout/adfilter"
     }
 ]

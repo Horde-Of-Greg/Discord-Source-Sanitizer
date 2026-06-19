@@ -1,4 +1,4 @@
-import { RemovalOperationKind } from "../../../types/data/rules/RemovalOperationKind.js";
+import { RemovalOperationKind } from "../../../types/data/rules/operations/RemovalOperationKind.js";
 import { BaseRemovalOperation } from "./BaseRemovalOperation.js";
 
 export class ExceptRegexRemovalOperation extends BaseRemovalOperation {

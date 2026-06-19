@@ -1,9 +1,9 @@
 import z from "zod";
 
-export const paramConfigSchema = z.array(
+export const linksConfigSchema = z.array(
     z.object({
-        name: z.string().optional(),
-        link: z.url(),
+        name: z.string(),
+        rawData: z.url(),
         source: z.url().optional(),
     }),
 );

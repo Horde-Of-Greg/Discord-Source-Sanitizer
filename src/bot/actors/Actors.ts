@@ -1,4 +1,4 @@
-import type { Sanitizer } from "./../../sanitizers/Sanitizer.js";
+import type { Sanitizer } from "../../sanitizers/Sanitizer.js";
 import { MessageReplacer } from "./MessageReplacer.js";
 
 export class Actors {
