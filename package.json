@@ -23,7 +23,7 @@
     "devDependencies": {
         "@eslint/js": "^10.0.1",
         "@types/linkify-it": "5.0.0",
-        "@types/node": "^25.9.1",
+        "@types/node": "^26.1.1",
         "@vitest/coverage-v8": "^4.1.9",
         "eslint": "^10.5.0",
         "eslint-config-prettier": "^10.1.8",
@@ -35,12 +35,12 @@
         "jiti": "^2.7.0",
         "prettier": "^3.8.4",
         "tsx": "^4.22.4",
-        "typescript": "^6.0.3",
+        "typescript": "^7.0.2",
         "typescript-eslint": "^8.61.1",
         "vitest": "^4.1.9"
     },
     "dependencies": {
-        "csv-parse": "^6.2.1",
+        "csv-parse": "^7.0.1",
         "discord.js": "^14.26.4",
         "dotenv": "^17.4.2",
         "linkify-it": "5.0.1",
